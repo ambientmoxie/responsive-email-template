@@ -1,89 +1,105 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
-	<title>HTML Email Template Boilerplate</title>
+<html
+  lang="en"
+  dir="ltr"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, date=no, address=no, email=no, url=no"
+    />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>HTML Email Template Boilerplate</title>
+    <link rel="stylesheet" href="custom-tp/custom-tp.css">
 
     <!--[if mso]>
-        <noscript>
-            <xml>
-                <o:OfficeDocumentSettings>
-                <o:PixelsPerInch>96</o:PixelsPerInch>
-                </o:OfficeDocumentSettings>
-            </xml>
-        </noscript>
-   <![endif]-->
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+    <![endif]-->
 
     <style type="text/css">
-        table {
-		    border-spacing: 0;
-            border-collapse: collapse;
-		}
-        td {
-            padding: 0;
-        }
-        p {
-            font-size: 15px;
-            line-height: 1.1;
-        }
-        img {
-            border: 0;
-        }
-        h1{
-            font-size: 35px;
-            font-weight: normal;
-            line-height: 1;
-            color: #000;
-            letter-spacing: -1px;
-        }
-        h2{
-            font-size: 22px;
-            font-weight: normal;
-            line-height: 1;
-            color: #000;
-        }
-        h3{
-            font-size: 18px;
-            font-weight: normal;
-            line-height: 1;
-            color: #000;
-        }
-        a {
-            text-decoration: none;
-            color: #3d3d3d;
-            font-size: 16px;
-        }
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 15px;
+        line-height: 1.1;
+      }
+      img {
+        border: 0;
+      }
+      h1 {
+        font-size: 35px;
+        font-weight: normal;
+        line-height: 1;
+        color: #000;
+        letter-spacing: -1px;
+      }
+      h2 {
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 1;
+        color: #000;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1;
+        color: #000;
+      }
+      a {
+        text-decoration: none;
+        color: #3d3d3d;
+        font-size: 16px;
+      }
 
-        .ExternalClass {
-            width: 100%;
-        }
+      .ExternalClass {
+        width: 100%;
+      }
 
-        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-            line-height: 100%;
-        }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
 
-        a[x-apple-data-detectors=true]{
-            color: inherit !important;
-            text-decoration: inherit !important;
-        }
+      a[x-apple-data-detectors="true"] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
 
+      span.Object {
+        color: inherit !important;
+      }
 
-        span.Object {
-            color: inherit !important;
-        }
+      span.Object-hover {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
 
-        span.Object-hover {
-            color: inherit !important;
-            text-decoration: none !important;
-        }
-
-        /* @media screen and (max-width: 599.98px) {
+      /* @media screen and (max-width: 599.98px) {
 
         }
 
@@ -91,7 +107,7 @@
 
         } */
 
-        /* :root {
+      /* :root {
             color-scheme: light dark;
             supported-color-schemes: light dark;
         }
@@ -111,597 +127,1212 @@
                 background-color: transparent !important;
             }
         } */
+    </style>
 
-   </style>
+    <!--[if mso]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: Arial, Helvetica, sans-serif !important;
+        }
+        table {
+          border-spacing: 0 !important;
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+  </head>
 
-   <!--[if mso]>
-		<style type="text/css">
-		    body {background-color: #dde0e1 !important;}
-            body, table, td, p, a {font-family: Arial, Helvetica, sans-serif !important;}
-            table {border-spacing: 0 !important;border-collapse: collapse !important;}
-		</style>
-	<![endif]-->
-    
-</head>
+  <body
+    class="body"
+    xml:lang="en"
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <div
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        color: #3d3d3d;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 0 auto 40px;
+      "
+    >
+      <div
+        id="email-container"
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          color: #3d3d3d;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 16px;
+          margin: 0 auto;
+        "
+      >
+        <div
+          style="
+            font-size: 0px;
+            color: #fafdfe;
+            mso-line-height-rule: exactly;
+            line-height: 0px;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+            mso-hide: all;
+          "
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+          provident! Blanditiis tenetur reprehenderit veniam fugiat aliquid?
+          Sint placeat explicabo praesentium tempore molestias, ratione, sed
+          nihil quasi aspernatur, totam quae enim?
+          &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+        </div>
 
-<body class="body" xml:lang="en" style="margin:0; padding:0; min-width:100%; background-color:#dde0e1;">
-    <div style="width: 100%; table-layout:fixed; background-color: #dde0e1; color:#3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto 40px;">
-        <div style="max-width: 600px; background-color: #fafdfe; color:#3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto;">
-            <div style="font-size: 0px; color: #fafdfe; mso-line-height-rule: exactly; line-height: 0px; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide:all;">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, provident! Blanditiis tenetur reprehenderit veniam fugiat aliquid? Sint placeat explicabo praesentium tempore molestias, ratione, sed nihil quasi aspernatur, totam quae enim?
-                &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
-            </div>
-
-            <!--[if mso]>
+        <!--[if mso]>
             <table width="600" align="center" style="border-spacing: 0; border-collapse:collapse; color: #3d3d3d;" role="presentation">
             <tr>
             <td style="padding:0;">
             <![endif]-->
-            
-            <table align="center" style="border-spacing:0; border-collapse: collapse; color:#3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: #ffffff; margin: 0 auto; padding:0; width: 100%; max-width: 600px;" role="presentation">
-            
-<!-- BIG SEPARATOR -->
 
+        <table
+          align="center"
+          style="
+            border-spacing: 0;
+            border-collapse: collapse;
+            color: #3d3d3d;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #ffffff;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+          role="presentation"
+        >
+          <!-- BIG SEPARATOR -->
+
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding:0;"> 
-
-                        <table width="100%" style="border-spacing: 0" role="presentation" >
-                            <tr>
-                                <td style="padding: 3px; background: linear-gradient(#000); background-color: #000;"></td>
-                            </tr>
-                        </table>
-                        
-                    </td> 
-                 </tr>
-
-<!-- HEADER -->
-
-                <tr>
-                    <td style="padding: 20px 0">
-                        <table width="100%" style="border-spacing:0;" role="presentation">
-                            <tr>
-
-                                <!-- Left column -->
-
-                                <td  style="padding: 0 20px; font-size: 0; background-color: #ffffff;">
-                                    <h1 style="font-size: 35px; font-weight: normal; margin: 0; line-height: 1; letter-spacing: -1px;">
-                                        Jacquemus
-                                    </h1>
-                                    <h1 style="font-size: 35px; font-weight: normal; margin: 0; line-height: 1; letter-spacing: -1px; color: #6F6F6F;">
-                                        November .23
-                                    </h1>
-                                </td>
-
-                                <!-- Right Column -->
-
-                                <td  style="padding: 0 20px; font-size: 0; background-color: #ffffff; vertical-align: top; text-align: right;">
-                                    <h3 style="font-size: 18px; font-weight: normal; margin: 0;">
-                                        Report
-                                    </h3>
-                                </td>
-
-                            </tr>
-                        </table>
-                    </td>
+                  <td
+                    style="
+                      padding: 3px;
+                      background: linear-gradient(#000);
+                      background-color: #000;
+                    "
+                  ></td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
-<!-- HEADER TEXT -->
+          <!-- HEADER -->
 
+          <tr>
+            <td style="padding: 20px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding: 20px 0">
-                        <table width="100%" style="border-spacing:0;" role="presentation">
-                            <tr>
-                            <td  style="padding: 0 20px; font-size: 0; background-color: #ffffff;">
-                                    <h1 style="font-size: 35px; font-weight: normal; margin: 0; line-height: 1; letter-spacing: -1px;">
-                                        Fusce blandit ligula posuere porttitor ultricies. Curabitur molestie purus est, non finibus mi egestas at.
-                                    </h1>
-                            </td>
-                            </tr>
-                        </table>
-                    </td>
+                  <!-- Left column -->
+
+                  <td
+                    style="
+                      padding: 0 20px;
+                      font-size: 0;
+                      background-color: #ffffff;
+                    "
+                  >
+                    <h1
+                      style="
+                        font-size: 35px;
+                        font-weight: normal;
+                        margin: 0;
+                        line-height: 1;
+                        letter-spacing: -1px;
+                      "
+                    >
+                      Jacquemus
+                    </h1>
+                    <h1
+                      style="
+                        font-size: 35px;
+                        font-weight: normal;
+                        margin: 0;
+                        line-height: 1;
+                        letter-spacing: -1px;
+                        color: #6f6f6f;
+                      "
+                    >
+                      November .23
+                    </h1>
+                  </td>
+
+                  <!-- Right Column -->
+
+                  <td
+                    style="
+                      padding: 0 20px;
+                      font-size: 0;
+                      background-color: #ffffff;
+                      vertical-align: top;
+                      text-align: right;
+                    "
+                  >
+                    <h3 style="font-size: 18px; font-weight: normal; margin: 0">
+                      Report
+                    </h3>
+                  </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
-<!-- HERO IMAGE -->
+          <!-- HEADER TEXT -->
 
+          <tr>
+            <td style="padding: 20px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding: 20px 0;">
-                        <table width="100%" style="border-spacing:0;" role="presentation">
-                            <tr>
-                                <td style="padding: 0 20px; font-size: 0; background-color: #ffffff;">
-                                    <a href="https://www.jacquemus.com/" target="_blank">
-                                        <img src="https://maximebenoit.work/jacquemus/assets/perso/hero.jpg" alt="hero image" width="100%" style="max-width: 600px; width: 100%; display: block;">
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
+                  <td
+                    style="
+                      padding: 0 20px;
+                      font-size: 0;
+                      background-color: #ffffff;
+                    "
+                  >
+                    <h1
+                      style="
+                        font-size: 35px;
+                        font-weight: normal;
+                        margin: 0;
+                        line-height: 1;
+                        letter-spacing: -1px;
+                      "
+                    >
+                      Fusce blandit ligula posuere porttitor ultricies.
+                      Curabitur molestie purus est, non finibus mi egestas at.
+                    </h1>
+                  </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
-<!-- BIG PARAGRAPH -->
+          <!-- HERO IMAGE -->
 
+          <tr>
+            <td style="padding: 20px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding: 20px 0 20px 0">
-
-                        <table width="100%" style="border-spacing:0;" role="presentation">
-                            <tr>
-                            <td  style="padding: 0 20px; font-size: 0; background-color: #ffffff;">
-                                    <h2 style="font-size: 22px; font-weight: normal; margin: 0; line-height: 1;">
-                                        Fusce blandit ligula posuere porttitor ultricies. Curabitur molestie purus est, non finibus mi egestas at.
-                                    </h2>
-                            </td>
-                            </tr>
-                        </table>
-
-                    </td>
+                  <td
+                    style="
+                      padding: 0 20px;
+                      font-size: 0;
+                      background-color: #ffffff;
+                    "
+                  >
+                    <a href="https://www.jacquemus.com/" target="_blank">
+                      <img
+                        src="https://maximebenoit.work/jacquemus/assets/perso/hero.jpg"
+                        alt="hero image"
+                        width="100%"
+                        style="max-width: 600px; width: 100%; display: block"
+                      />
+                    </a>
+                  </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
-<!-- TWO COLUMNS RESPONSIVE TEXT -->
+          <!-- BIG PARAGRAPH -->
 
+          <tr>
+            <td style="padding: 20px 0 20px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding: 20px 0;">
-                        <table width="100%" style="border-spacing: 0;" role="presentation">
-                            <tr>
-                                <td  style="padding: 0; font-size: 0; text-align: center;">
-
-                                    <!-- First column -->
-
-                                    <table class="column column-one-half" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block;" role="presentation">
-                                        <tr>
-                                            <td style="padding: 0 20px 20px 20px">
-                                                <table class="content" style="border-spacing: 0; text-align: left; background-color: #F7F7F7;" role="presentation">
-                                                    <tr>
-                                                        <td style="padding: 20px 20px 0 20px">
-                                                            <p style="margin: 0; font-size: 15px; color: #000; line-height: 1.1;">18 March, 2021</p>
-                                                            <p style="margin: 0; font-size: 15px; color: #00f; line-height: 1.1;">Fusce blandit ligula posuere porttitor ultricies.</p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="padding: 20px 20px 20px 20px">
-                                                            <a href="https://www.jacquemus.com/" style="margin: 0; font-size: 15px; color: #000; line-height: 1.1;">→ Go to link</a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-
-                                    <!-- Second column -->
-
-                                    <table class="column column-one-half" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block;" role="presentation">
-                                        <tr>
-                                            <td style="padding: 0 20px 20px 20px">
-                                                <table class="content" style="border-spacing: 0; text-align: left; background-color: #F7F7F7;" role="presentation">
-                                                    <tr>
-                                                        <td style="padding: 20px 20px 0 20px">
-                                                            <p style="margin: 0; font-size: 15px; color: #000; line-height: 1.1;">18 March, 2021</p>
-                                                            <p style="margin: 0; font-size: 15px; color: #00f; line-height: 1.1;">Fusce blandit ligula posuere porttitor ultricies.</p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td style="padding: 20px 20px 20px 20px">
-                                                            <a href="https://www.jacquemus.com/" style="margin: 0; font-size: 15px; color: #000; line-height: 1.1;">→ Go to link</a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-
-                                </td>
-                            </tr>
-                        </table>
-                        
-                    </td>
+                  <td
+                    style="
+                      padding: 0 20px;
+                      font-size: 0;
+                      background-color: #ffffff;
+                    "
+                  >
+                    <h2
+                      style="
+                        font-size: 22px;
+                        font-weight: normal;
+                        margin: 0;
+                        line-height: 1;
+                      "
+                    >
+                      Fusce blandit ligula posuere porttitor ultricies.
+                      Curabitur molestie purus est, non finibus mi egestas at.
+                    </h2>
+                  </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
-<!-- LIGHT SEPARATOR -->
+          <!-- TWO COLUMNS RESPONSIVE TEXT -->
 
+          <tr>
+            <td style="padding: 20px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding:0 20px;"> 
-                        <table width="100%" style="border-spacing: 0" role="presentation" >
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!-- First column -->
+
+                    <table
+                      class="column column-one-half"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td style="padding: 0 20px 20px 20px">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              text-align: left;
+                              background-color: #f7f7f7;
+                            "
+                            role="presentation"
+                          >
                             <tr>
-                                <td style="padding: 0.5px; background: linear-gradient(#000); background-color: #000;"></td>
+                              <td style="padding: 20px 20px 0 20px">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #000;
+                                    line-height: 1.1;
+                                  "
+                                >
+                                  18 March, 2021
+                                </p>
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #00f;
+                                    line-height: 1.1;
+                                  "
+                                >
+                                  Fusce blandit ligula posuere porttitor
+                                  ultricies.
+                                </p>
+                              </td>
                             </tr>
-                        </table>
-                    </td>
-                </tr>
-
-<!-- CAP PARAGRAPH -->
-
-                <tr>
-                    <td style="padding: 40px 0">
-
-                        <table width="100%" style="border-spacing:0;" role="presentation">
                             <tr>
-                                <td class="single-column-wrapper" style="padding: 0 20px; font-size: 0; font-size: 0; background-color: #ffffff; color: rgb(0, 0, 0)">
-                                    <table width="100%" style="border-spacing:0;" role="presentation">
-                                        <tr>
-                                            <td style="padding: 0; font-size: 0; font-size: 0; background-color: #ffffff;">
-                                                <h2 style="font-size: 22px; font-weight: normal; margin: 0; line-height: 1; color: #000;">
-                                                    Fusce blandit ligula posuere porttitor ultricies. Curabitur molestie purus est, non finibus mi egestas at.
-                                                </h2>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="single-column-wrapper" style="padding: 20px 0 0 0; font-size: 0; background-color: #ffffff; color: #00F">
-                                                <a style="font-size: 22px; font-weight: normal; margin: 0; line-height: 1; color: #00F;" href="https://www.jacquemus.com/">Learn more about this part</a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
+                              <td style="padding: 20px 20px 20px 20px">
+                                <a
+                                  href="https://www.jacquemus.com/"
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #000;
+                                    line-height: 1.1;
+                                  "
+                                  >→ Go to link</a
+                                >
+                              </td>
                             </tr>
-                        </table>
-                    </td>
-                </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
 
-<!-- THREE COLUMNS RESPONSIVE WITH IMAGES -->
+                    <!-- Second column -->
 
-                <tr>
-                    <td style="padding: 0 0 20px 0"> <!-- Padding Vertical Layer -->
-                        <table width="100%" style="border-spacing: 0;" role="presentation"> 
+                    <table
+                      class="column column-one-half"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td style="padding: 0 20px 20px 20px">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              text-align: left;
+                              background-color: #f7f7f7;
+                            "
+                            role="presentation"
+                          >
                             <tr>
-                                <td  style="padding: 0; font-size: 0; text-align: center;"> <!-- Column wrapper. Padding Horizontally eventually -->
+                              <td style="padding: 20px 20px 0 20px">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #000;
+                                    line-height: 1.1;
+                                  "
+                                >
+                                  18 March, 2021
+                                </p>
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #00f;
+                                    line-height: 1.1;
+                                  "
+                                >
+                                  Fusce blandit ligula posuere porttitor
+                                  ultricies.
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 20px 20px 20px 20px">
+                                <a
+                                  href="https://www.jacquemus.com/"
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #000;
+                                    line-height: 1.1;
+                                  "
+                                  >→ Go to link</a
+                                >
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-                                    <!--[if mso]>
+          <!-- LIGHT SEPARATOR -->
+
+          <tr>
+            <td style="padding: 0 20px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    style="
+                      padding: 0.5px;
+                      background: linear-gradient(#000);
+                      background-color: #000;
+                    "
+                  ></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- CAP PARAGRAPH -->
+
+          <tr>
+            <td style="padding: 40px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td
+                    class="single-column-wrapper"
+                    style="
+                      padding: 0 20px;
+                      font-size: 0;
+                      font-size: 0;
+                      background-color: #ffffff;
+                      color: rgb(0, 0, 0);
+                    "
+                  >
+                    <table
+                      width="100%"
+                      style="border-spacing: 0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          style="
+                            padding: 0;
+                            font-size: 0;
+                            font-size: 0;
+                            background-color: #ffffff;
+                          "
+                        >
+                          <h2
+                            style="
+                              font-size: 22px;
+                              font-weight: normal;
+                              margin: 0;
+                              line-height: 1;
+                              color: #000;
+                            "
+                          >
+                            Fusce blandit ligula posuere porttitor ultricies.
+                            Curabitur molestie purus est, non finibus mi egestas
+                            at.
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          class="single-column-wrapper"
+                          style="
+                            padding: 20px 0 0 0;
+                            font-size: 0;
+                            background-color: #ffffff;
+                            color: #00f;
+                          "
+                        >
+                          <a
+                            style="
+                              font-size: 22px;
+                              font-weight: normal;
+                              margin: 0;
+                              line-height: 1;
+                              color: #00f;
+                            "
+                            href="https://www.jacquemus.com/"
+                            >Learn more about this part</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- THREE COLUMNS RESPONSIVE WITH IMAGES -->
+
+          <tr>
+            <td style="padding: 0 0 20px 0">
+              <!-- Padding Vertical Layer -->
+              <table width="100%" style="border-spacing: 0" role="presentation">
+                <tr>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!-- Column wrapper. Padding Horizontally eventually -->
+
+                    <!--[if mso]>
                                         <table width="100%" style="border-spacing: 0;" role="presentation">
                                         <tr>
                                         <td width="300" valign="top" style="padding: 0;">
                                     <![endif]-->
 
-                                    <!-- First Column -->
+                    <!-- First Column -->
 
-                                    <table class="column column-one-third" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 200px; display: inline-block; background-color: #ffffff;" role="presentation"> <!-- Column 300px width -->
-                                        <tr>
-                                            <td style="padding: 0 20px 20px 20px;"> 
+                    <table
+                      class="column column-one-third"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        background-color: #ffffff;
+                      "
+                      role="presentation"
+                    >
+                      <!-- Column 300px width -->
+                      <tr>
+                        <td style="padding: 0 20px 20px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 0 0 10px 0">
+                                <a
+                                  href="https://www.jacquemus.com/"
+                                  target="_blank"
+                                >
+                                  <img
+                                    src="https://maximebenoit.work/jacquemus/assets/perso/hat.png"
+                                    width="160"
+                                    alt="hat"
+                                    style="
+                                      max-width: 160px;
+                                      border: 0;
+                                      display: block;
+                                    "
+                                  />
+                                </a>
+                              </td>
+                            </tr>
 
-                                                <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
-                                                    <tr>
-                                                        <td  style="padding: 0 0 10px 0;">
-                                                            <a href="https://www.jacquemus.com/" target="_blank">
-                                                                <img src="https://maximebenoit.work/jacquemus/assets/perso/hat.png" width="160" alt="hat" style="max-width: 160px; border: 0; display: block;">
-                                                            </a>
-            
-                                                        </td>
-                                                    </tr>
+                            <tr>
+                              <td style="padding: 10px 0">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #000;
+                                    line-height: 1.1;
+                                  "
+                                >
+                                  Fusce mauris nisl, fringilla sed lectus vitae,
+                                  tempor porttitor sapien.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
 
-                                                    <tr>
-                                                        <td style="padding: 10px 0;">
-                                                            <p style="margin: 0; font-size: 15px; color: #000; line-height: 1.1;">
-                                                                Fusce mauris nisl, fringilla sed lectus vitae, tempor porttitor sapien. 
-                                                            </p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
+                    <!-- Second Column -->
 
-                                            </td>
-                                        </tr>
-                                    </table>
+                    <table
+                      class="column column-one-third"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        background-color: #ffffff;
+                      "
+                      role="presentation"
+                    >
+                      <!-- Column 300px width -->
+                      <tr>
+                        <td style="padding: 0 20px 20px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 0 0 10px 0">
+                                <a
+                                  href="https://www.jacquemus.com/"
+                                  target="_blank"
+                                >
+                                  <img
+                                    src="https://maximebenoit.work/jacquemus/assets/perso/bag.png"
+                                    width="160"
+                                    alt="bag"
+                                    style="
+                                      max-width: 160px;
+                                      border: 0;
+                                      display: block;
+                                    "
+                                  />
+                                </a>
+                              </td>
+                            </tr>
 
-                                    <!-- Second Column -->
+                            <tr>
+                              <td style="padding: 10px 0">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #000;
+                                    line-height: 1.1;
+                                  "
+                                >
+                                  Fusce mauris nisl, fringilla sed lectus vitae,
+                                  tempor porttitor sapien.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
 
-                                    <table class="column column-one-third" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 200px; display: inline-block; background-color: #ffffff;" role="presentation"> <!-- Column 300px width -->
-                                        <tr>
-                                            <td style="padding: 0 20px 20px 20px;"> 
+                    <!-- Third Column -->
 
-                                                <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
-                                                    <tr>
-                                                        <td  style="padding: 0 0 10px 0;">
-                                                            <a href="https://www.jacquemus.com/" target="_blank">
-                                                                <img src="https://maximebenoit.work/jacquemus/assets/perso/bag.png" width="160" alt="bag" style="max-width: 160px; border: 0; display: block;">
-                                                            </a>
-            
-                                                        </td>
-                                                    </tr>
+                    <table
+                      class="column column-one-third"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        background-color: #ffffff;
+                      "
+                      role="presentation"
+                    >
+                      <!-- Column 300px width -->
+                      <tr>
+                        <td style="padding: 0 20px 20px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 0 0 10px 0">
+                                <a
+                                  href="https://www.jacquemus.com/"
+                                  target="_blank"
+                                >
+                                  <img
+                                    src="https://maximebenoit.work/jacquemus/assets/perso/shirt.jpg"
+                                    width="160"
+                                    alt="shirt"
+                                    style="
+                                      max-width: 160px;
+                                      border: 0;
+                                      display: block;
+                                    "
+                                  />
+                                </a>
+                              </td>
+                            </tr>
 
-                                                    <tr>
-                                                        <td style="padding: 10px 0;">
-                                                            <p style="margin: 0; font-size: 15px; color: #000; line-height: 1.1;">
-                                                                Fusce mauris nisl, fringilla sed lectus vitae, tempor porttitor sapien. 
-                                                            </p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
+                            <tr>
+                              <td style="padding: 10px 0">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #000;
+                                    line-height: 1.1;
+                                  "
+                                >
+                                  Fusce mauris nisl, fringilla sed lectus vitae,
+                                  tempor porttitor sapien.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
 
-                                            </td>
-                                        </tr>
-                                    </table>
-
-                                    <!-- Third Column -->
-
-                                    <table class="column column-one-third" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 200px; display: inline-block; background-color: #ffffff;" role="presentation"> <!-- Column 300px width -->
-                                        <tr>
-                                            <td style="padding: 0 20px 20px 20px;"> 
-
-                                                <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
-                                                    <tr>
-                                                        <td  style="padding: 0 0 10px 0;">
-                                                            <a href="https://www.jacquemus.com/" target="_blank">
-                                                                <img src="https://maximebenoit.work/jacquemus/assets/perso/shirt.jpg" width="160" alt="shirt" style="max-width: 160px; border: 0; display: block;">
-                                                            </a>
-            
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td style="padding: 10px 0;">
-                                                            <p style="margin: 0; font-size: 15px; color: #000; line-height: 1.1;">
-                                                                Fusce mauris nisl, fringilla sed lectus vitae, tempor porttitor sapien. 
-                                                            </p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    
-                                    <!--[if mso]>
+                    <!--[if mso]>
                                         </td>
                                         </tr>
                                         </table>
                                     <![endif]-->
-
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
+                  </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
-<!-- LIGHT SEPARATOR -->
+          <!-- LIGHT SEPARATOR -->
 
+          <tr>
+            <td style="padding: 0 20px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding:0 20px;"> 
-                        <table width="100%" style="border-spacing: 0" role="presentation" >
-                            <tr>
-                                <td style="padding: 0.5px; background: linear-gradient(#000); background-color: #000;"></td>
-                            </tr>
-                        </table>
-                    </td>
+                  <td
+                    style="
+                      padding: 0.5px;
+                      background: linear-gradient(#000);
+                      background-color: #000;
+                    "
+                  ></td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
-<!-- CAP PARAGRAPH -->
+          <!-- CAP PARAGRAPH -->
 
+          <tr>
+            <td style="padding: 40px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding: 40px 0">
-
-                        <table width="100%" style="border-spacing:0;" role="presentation">
-                            <tr>
-                                <td class="single-column-wrapper" style="padding: 0 20px; font-size: 0; font-size: 0; background-color: #ffffff; color: rgb(0, 0, 0)">
-                                    <table width="100%" style="border-spacing:0;" role="presentation">
-                                        <tr>
-                                            <td style="padding: 0; font-size: 0; font-size: 0; background-color: #ffffff;">
-                                                <h2 style="font-size: 22px; font-weight: normal; margin: 0; line-height: 1; color: #000;">
-                                                    Fusce blandit ligula posuere porttitor ultricies. Curabitur molestie purus est, non finibus mi egestas at.
-                                                </h2>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-
-                    </td>
+                  <td
+                    class="single-column-wrapper"
+                    style="
+                      padding: 0 20px;
+                      font-size: 0;
+                      font-size: 0;
+                      background-color: #ffffff;
+                      color: rgb(0, 0, 0);
+                    "
+                  >
+                    <table
+                      width="100%"
+                      style="border-spacing: 0"
+                      role="presentation"
+                    >
+                      <tr>
+                        <td
+                          style="
+                            padding: 0;
+                            font-size: 0;
+                            font-size: 0;
+                            background-color: #ffffff;
+                          "
+                        >
+                          <h2
+                            style="
+                              font-size: 22px;
+                              font-weight: normal;
+                              margin: 0;
+                              line-height: 1;
+                              color: #000;
+                            "
+                          >
+                            Fusce blandit ligula posuere porttitor ultricies.
+                            Curabitur molestie purus est, non finibus mi egestas
+                            at.
+                          </h2>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
-<!-- TWO COLUMNS RESPONSIVE WITH IMAGES -->
+          <!-- TWO COLUMNS RESPONSIVE WITH IMAGES -->
 
+          <tr>
+            <td style="padding: 0 0 40px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding: 0 0 40px 0">
-                        <table width="100%" style="border-spacing: 0;" role="presentation"> 
-                            <tr>
-                                <td  style="padding: 0; font-size: 0; text-align: center;"> 
-
-                                    <!--[if mso]>
+                  <td style="padding: 0; font-size: 0; text-align: center">
+                    <!--[if mso]>
                                         <table width="100%" style="border-spacing: 0;" role="presentation">
                                         <tr>
                                         <td width="300" valign="top" style="padding: 0;">
                                     <![endif]-->
 
-                                    <!-- First Column -->
+                    <!-- First Column -->
 
-                                    <table class="column column-one-half" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block; background-color: #ffffff;" role="presentation"> 
-                                        <tr>
-                                            <td style="padding: 0 20px 20px 20px;"> 
+                    <table
+                      class="column column-one-half"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        background-color: #ffffff;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td style="padding: 0 20px 20px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 0 0 10px 0">
+                                <a
+                                  href="https://www.jacquemus.com/"
+                                  target="_blank"
+                                >
+                                  <img
+                                    src="https://maximebenoit.work/jacquemus/assets/perso/model-1.jpg"
+                                    width="260"
+                                    alt="model 1"
+                                    style="
+                                      max-width: 260px;
+                                      border: 0;
+                                      display: block;
+                                    "
+                                  />
+                                </a>
+                              </td>
+                            </tr>
 
-                                                <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
+                            <tr>
+                              <td style="padding: 10px 0">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #000;
+                                    line-height: 1.1;
+                                  "
+                                >
+                                  Fusce mauris nisl, fringilla sed lectus vitae,
+                                  tempor porttitor sapien.
+                                </p>
+                              </td>
+                            </tr>
 
-                                                    <tr>
-                                                        <td  style="padding: 0 0 10px 0;">
-                                                            <a href="https://www.jacquemus.com/" target="_blank">
-                                                                <img src="https://maximebenoit.work/jacquemus/assets/perso/model-1.jpg" width="260" alt="model 1" style="max-width: 260px; border: 0; display: block;">
-                                                            </a>
-            
-                                                        </td>
-                                                    </tr>
+                            <tr>
+                              <td align="left" style="padding: 20px 0 10px 0">
+                                <table
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td
+                                      align="left"
+                                      style="background-color: #e3e3e3"
+                                    >
+                                      <a
+                                        href="https://www.jacquemus.com."
+                                        target="_blank"
+                                        style="
+                                          font-weight: normal;
+                                          font-size: 15px;
+                                          text-decoration: none;
+                                          color: #000;
+                                          background-color: #e3e3e3;
+                                          padding: 10px 20px;
+                                        "
+                                        >See the product</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
 
-                                                    <tr>
-                                                        <td style="padding: 10px 0;">
-                                                            <p style="margin: 0; font-size: 15px; color: #000; line-height: 1.1;">
-                                                                Fusce mauris nisl, fringilla sed lectus vitae, tempor porttitor sapien. 
-                                                            </p>
-                                                        </td>
-                                                    </tr>
+                    <!-- Second Column -->
 
-                                                    <tr>
-                                                        <td align="left" style="padding: 20px 0 10px 0;"> 
-                                                            <table style="border-spacing: 0;" role="presentation"> 
-                                                                <tr>
-                                                                    <td align="left" style="background-color: #E3E3E3;">
-                                                                        <a href="https://www.jacquemus.com." target="_blank" style="font-weight: normal; font-size: 15px; text-decoration: none; color: #000; background-color: #E3E3E3; padding: 10px 20px;">See the product</a>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
+                    <table
+                      class="column column-one-half"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 300px;
+                        display: inline-block;
+                        background-color: #ffffff;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td style="padding: 0 20px 20px 20px">
+                          <table
+                            class="content"
+                            style="border-spacing: 0; text-align: left"
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 0 0 10px 0">
+                                <a
+                                  href="https://www.jacquemus.com/"
+                                  target="_blank"
+                                >
+                                  <img
+                                    src="https://maximebenoit.work/jacquemus/assets/perso/model-2.jpg"
+                                    width="260"
+                                    alt="model 2"
+                                    style="
+                                      max-width: 260px;
+                                      border: 0;
+                                      display: block;
+                                    "
+                                  />
+                                </a>
+                              </td>
+                            </tr>
 
-                                                </table>
+                            <tr>
+                              <td style="padding: 10px 0">
+                                <p
+                                  style="
+                                    margin: 0;
+                                    font-size: 15px;
+                                    color: #000;
+                                    line-height: 1.1;
+                                  "
+                                >
+                                  Fusce mauris nisl, fringilla sed lectus vitae,
+                                  tempor porttitor sapien.
+                                </p>
+                              </td>
+                            </tr>
 
-                                            </td>
-                                        </tr>
-                                    </table>
+                            <tr>
+                              <td align="left" style="padding: 20px 0 10px 0">
+                                <table
+                                  style="border-spacing: 0"
+                                  role="presentation"
+                                >
+                                  <tr>
+                                    <td
+                                      align="left"
+                                      style="background-color: #e3e3e3"
+                                    >
+                                      <a
+                                        href="https://www.jacquemus.com."
+                                        target="_blank"
+                                        style="
+                                          font-weight: normal;
+                                          font-size: 15px;
+                                          text-decoration: none;
+                                          color: #000;
+                                          background-color: #e3e3e3;
+                                          padding: 10px 20px;
+                                        "
+                                        >See the product</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
 
-                                    <!-- Second Column -->
-
-                                    <table class="column column-one-half" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block; background-color: #ffffff;" role="presentation"> 
-                                        <tr>
-                                            <td style="padding: 0 20px 20px 20px;"> 
-
-                                                <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
-
-                                                    <tr>
-                                                        <td  style="padding: 0 0 10px 0;">
-                                                            <a href="https://www.jacquemus.com/" target="_blank">
-                                                                <img src="https://maximebenoit.work/jacquemus/assets/perso/model-2.jpg" width="260" alt="model 2" style="max-width: 260px; border: 0; display: block;">
-                                                            </a>
-            
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td style="padding: 10px 0;">
-                                                            <p style="margin: 0; font-size: 15px; color: #000; line-height: 1.1;">
-                                                                Fusce mauris nisl, fringilla sed lectus vitae, tempor porttitor sapien. 
-                                                            </p>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td align="left" style="padding: 20px 0 10px 0;"> 
-                                                            <table style="border-spacing: 0;" role="presentation"> 
-                                                                <tr>
-                                                                    <td align="left" style="background-color: #E3E3E3;">
-                                                                        <a href="https://www.jacquemus.com." target="_blank" style="font-weight: normal; font-size: 15px; text-decoration: none; color: #000; background-color: #E3E3E3; padding: 10px 20px;">See the product</a>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    
-                                    <!--[if mso]>
+                    <!--[if mso]>
                                         </td>
                                         </tr>
                                         </table>
                                     <![endif]-->
-
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
+                  </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
-<!-- LIGHT SEPARATOR -->
+          <!-- LIGHT SEPARATOR -->
 
+          <tr>
+            <td style="padding: 0 20px">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding:0 20px;"> 
-                        <table width="100%" style="border-spacing: 0" role="presentation" >
-                            <tr>
-                                <td style="padding: 0.5px; background: linear-gradient(#000); background-color: #000;"></td>
-                            </tr>
-                        </table>
-                    </td>
+                  <td
+                    style="
+                      padding: 0.5px;
+                      background: linear-gradient(#000);
+                      background-color: #000;
+                    "
+                  ></td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
+          <!-- TWO COLUMNS RESPONSIVE TEXT -->
 
-<!-- TWO COLUMNS RESPONSIVE TEXT -->
-
+          <tr>
+            <td style="padding: 20px 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding: 20px 0;">
-                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                  <td style="padding: 0; font-size: 0; text-align: left">
+                    <!-- First Column -->
+
+                    <table
+                      class="column column-one-half"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td style="padding: 0">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              text-align: left;
+                              background-color: #ffffff;
+                            "
+                            role="presentation"
+                          >
                             <tr>
-                                <td  style="padding: 0; font-size: 0; text-align: left;">
-
-                                    <!-- First Column -->
-
-                                    <table class="column column-one-half" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 200px; display: inline-block;" role="presentation">
-                                        <tr>
-                                            <td style="padding: 0">
-                                                <table class="content" style="border-spacing: 0; text-align: left; background-color: #ffffff;" role="presentation">
-                                                    <tr>
-                                                        <td style="padding: 20px 20px 0 20px">
-                                                            <h2 style="font-size: 22px; font-weight: normal; margin: 0; line-height: 1;">Fusce blandit ligula posuere porttitor ultricies.</h2>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-
-                                    <!-- Second Column -->
-
-                                    <table class="column column-one-half" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 400px; display: inline-block;" role="presentation">
-                                        <tr>
-                                            <td style="padding: 0">
-                                                <table class="content" style="border-spacing: 0; text-align: left; background-color: #ffffff;" role="presentation">
-                                                    <tr>
-                                                        <td style="padding: 20px 20px 0 20px">
-                                                            <h2 style="font-size: 22px; font-weight: normal; margin: 0; line-height: 1;">Fusce blandit ligula posuere porttitor ultricies.</h2>
-                                                        </td>
-                                                    </tr>
-                                                
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-
-                                </td>
+                              <td style="padding: 20px 20px 0 20px">
+                                <h2
+                                  style="
+                                    font-size: 22px;
+                                    font-weight: normal;
+                                    margin: 0;
+                                    line-height: 1;
+                                  "
+                                >
+                                  Fusce blandit ligula posuere porttitor
+                                  ultricies.
+                                </h2>
+                              </td>
                             </tr>
-                        </table>
-                        
-                    </td>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Second Column -->
+
+                    <table
+                      class="column column-one-half"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: top;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td style="padding: 0">
+                          <table
+                            class="content"
+                            style="
+                              border-spacing: 0;
+                              text-align: left;
+                              background-color: #ffffff;
+                            "
+                            role="presentation"
+                          >
+                            <tr>
+                              <td style="padding: 20px 20px 0 20px">
+                                <h2
+                                  style="
+                                    font-size: 22px;
+                                    font-weight: normal;
+                                    margin: 0;
+                                    line-height: 1;
+                                  "
+                                >
+                                  Fusce blandit ligula posuere porttitor
+                                  ultricies.
+                                </h2>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
+          <!-- SIMPLE TWO COLUMNS REVERSED -->
 
-<!-- SIMPLE TWO COLUMNS REVERSED -->
-
-
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0" role="presentation">
                 <tr>
-                    <td style="padding: 0;">
-                        <table width="100%" style="border-spacing:0;" role="presentation">
-                            <tr>
-                                <td  style="padding: 0; font-size: 0; background-color: #ffffff; text-align: left;" dir="rtl">
+                  <td
+                    style="
+                      padding: 0;
+                      font-size: 0;
+                      background-color: #ffffff;
+                      text-align: left;
+                    "
+                    dir="rtl"
+                  >
+                    <table
+                      class="column column-one-half"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: middle;
+                        width: 100%;
+                        max-width: 400px;
+                        display: inline-block;
+                        background-color: #ffffff;
+                        color: #fff;
+                      "
+                      role="presentation"
+                    >
+                      <tr>
+                        <td style="padding: 20px; background-color: #ffffff">
+                          <a href="https://example.com"
+                            ><img
+                              src="https://maximebenoit.work/jacquemus/assets/perso/reverse-shot.jpg"
+                              width="360"
+                              style="width: 100%; display: block"
+                              alt="Image Description"
+                          /></a>
+                        </td>
+                      </tr>
+                    </table>
 
-                                <table class="column column-one-half" width="100%" style="border-spacing: 0; vertical-align: middle; width: 100%; max-width: 400px; display: inline-block; background-color: #ffffff; color: #fff;" role="presentation">
-                                    <tr>
-                                        <td style="padding: 20px;background-color: #ffffff;">
-                                            <a href="https://example.com"><img src="https://maximebenoit.work/jacquemus/assets/perso/reverse-shot.jpg" width="360" style="width: 100%; display: block;" alt="Image Description"></a>
-                                        </td>
-                                    </tr>
-                                </table>
-
-                                <table class="column column-two-third" width="100%" style="border-spacing: 0; vertical-align: bottom; width: 100%; max-width: 200px; display: inline-block; background-color: #ffffff; color: #fff;" role="presentation" dir="ltr">
-                                    <tr>
-                                        <td style="padding: 20px;background-color: #ffffff; text-align: left;">
-                                            <p style="margin: 0; font-size: 15px; color: #000; line-height: 1.1; text-align: left;">Fusce blandit ligula posuere porttitor.</p>
-                                        </td>
-                                    </tr>
-                                </table>
-
-                                </td>
-                            </tr>
-
-                        </table>
-                    </td>
+                    <table
+                      class="column column-two-third"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        vertical-align: bottom;
+                        width: 100%;
+                        max-width: 200px;
+                        display: inline-block;
+                        background-color: #ffffff;
+                        color: #fff;
+                      "
+                      role="presentation"
+                      dir="ltr"
+                    >
+                      <tr>
+                        <td
+                          style="
+                            padding: 20px;
+                            background-color: #ffffff;
+                            text-align: left;
+                          "
+                        >
+                          <p
+                            style="
+                              margin: 0;
+                              font-size: 15px;
+                              color: #000;
+                              line-height: 1.1;
+                              text-align: left;
+                            "
+                          >
+                            Fusce blandit ligula posuere porttitor.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
                 </tr>
+              </table>
+            </td>
+          </tr>
 
- <!-- END SIMPLE TWO COLUMNS REVERSED -->
+          <!-- END SIMPLE TWO COLUMNS REVERSED -->
+        </table>
 
-            </table>
+        <!-- Closing mso tag -->
 
-            <!-- Closing mso tag -->
-            
-            <!--[if mso]>
+        <!--[if mso]>
             </td>
             </tr>
             </table>
             <![endif]-->
+      </div>
+    </div>
 
-        </div>
-     </div>
-</body>
+    <!-- <script src="tp.js"></script> -->
 
+    <script type="module" src="custom-tp/custom-tp.js"></script>
+  </body>
+</html>
